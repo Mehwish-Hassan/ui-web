@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #3155e7;
+    --primary-dark: #2045d6;
+    --black: #010101;
+    --grey-1: #788190;
+    --grey-2: #d3d4db;
+    --white: #ffffff;
+    --body: #fefefe;
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body);
+}
+/* GENERAL */
+section .container{
+    padding: 9rem 0;
+}
+
+/* NAVBAR */
+.btn{
+    border-radius: 8px;
+}
+.btn-primary,
+.btn-outline-secondary{
+    padding: 0.8rem 2rem;
+}
+.btn-primary{
+    background-color: var(--primary);
+}
+.btn-primary:hover{
+    background-color: var(--primary-dark);
+}
+.btn-outline-secondary{
+    border: 1px solid var(--grey-2);
+    color: var(--black);
+}
+.btn-outline-secondary:hover{
+    background-color: var(--grey-2);
+    border: 1px solid var(--grey-2);
+    color: var(--black);
+}
+section .container p{
+    color: var(--grey-1);
+}
+
+.navbar{
+    padding: 2rem 0;
+}
+.navbar-nav .nav-link:active{
+    font-weight: 800;
+    color: var(--black);
+}
+.navbar-nav .nav-link:hover{
+    font-weight: 800;
+    color: var(--grey-1);
+}
+/* HERO */
+section.hero .btn{
+    margin-top: 2rem;
+}
+
+/* SETUP */
+section.setup .text-header h3,
+section.join .container h3{
+    font-size: 2rem; 
+    line-height: 3rem;
+}
+section.setup .text-header p,
+section.join .container .text-header p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+section.setup .container .desc .h5{
+    font-weight: 900;
+}
+section.setup .container p{
+    width: 80%;
+    margin: auto;
+}
+section.setup .btn{
+    border: 2px solid var(--grey-1);
+}
+section.setup .btn:hover{
+    border-color: var(--grey-2);
+}
+
+
+/* INFORMATION */
+
+section.information .container h5{
+    margin-top: 27%;
+    font-size: 2rem;
+}
+section.information .container .text-information p{
+    padding-top: 2rem;
+}
+section.information .container .info-2{
+    margin-top: 8rem;
+}
+
+
+
+div.modal-footer{
+    display: flex;
+    flex-direction: column;
+}
+div.modal-footer p{
+    color: var(--black);
+}
+div.modal-footer a{
+    text-decoration: none;
+}
+div.modal-footer a:hover{
+    text-decoration: underline;
+}
+
+
+
+@media(min-width : 1024px){
+    section.hero .text{
+        line-height: 4rem;
+    }
+    .navbar .btn{
+        margin-top: -0.4rem;
+    }
+    section.join .container {
+        margin-top: -2rem;
+        width: 60%;
+    }
+}
+
+@media (max-width : 991px) {
+    section.setup .container .col-md-4{
+        width: 20rem;
+        margin: auto;
+    }
+    section.information .container h5{
+        margin-top: 8%;
+    }
+}
+@media(max-width : 767px){
+    section.hero .img{
+        padding-top: 2.5rem;
+    }
+    section.hero .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    section.setup .container .col-md-4,
+    section.setup .container .text-header{
+        width: 80%;
+        margin: auto;
+    }
+    section.information .container h5{
+        margin-top: -4rem;
+    }
+    section.information .container .text-information{
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+    section.information .container .info-2 img{
+        margin-bottom: 8rem;
+    }
+    
+}
+@media(max-width :600px){
+    section .container{
+        padding: 2rem 1.5rem;
+    }
+    .navbar-brand > img{
+        margin-left: 1rem;
+    }
+   .navbar .offcanvas{
+    width: 80%;
+   }
+   section.setup .container .desc1 .btn{
+    margin-bottom: 8rem;
+   }
+   section.footer{
+    margin-top: 2rem;
+   }
+}
